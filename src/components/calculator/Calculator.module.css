@@ -1,0 +1,115 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    border: 1px solid black;
+    width: 245px;
+    height: 360px;
+    padding: 10px;
+    background-color: #101116;
+}
+
+.result {
+    grid-area: 1 / 1 / 2 / 3;
+    /* border: 1px solid green; */
+    width: 242px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.operators {
+    grid-area: 2 / 2 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60px;
+    /* border: 1px solid purple; */
+}
+
+.operators button {
+    height: 50px;
+    margin: 5px;
+}
+
+.deletes {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 175px;
+    /* border: 1px solid green; */
+}
+
+
+.digits {
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    width: 175px;
+    /* border: 1px solid salmon; */
+}
+
+.btn, .btnClear, .btnEqual{
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+}
+
+.equals {
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 242px;
+    /* border: 1px solid blue; */
+}
+
+.btnClear{
+    width: 108px;
+}
+
+.btnEqual{
+    width: 118px;
+}
+
+.operators button, .btnEqual, .btnClear, .deletes .btn, .btn {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.btnClear, .deletes .btn {
+    color: black;
+}
+
+.btn {
+    background-color: #202020;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+} 
+
+
+
+
